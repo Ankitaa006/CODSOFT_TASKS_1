@@ -47,7 +47,7 @@ def MarkComplete():
         try:
             search_index = int(input("Enter the task number that you want to mark as complete: ")) - 1
             if 0 <= search_index < len(todoList):
-                todoList[search_index]['Status'] == "Complete"
+                todoList[search_index]['Status'] = "Complete"
                 print(f"Task : Task {todoList[search_index]['Task']} has been marked as complete.")
             else:
                 print("invalid Task Number.")
